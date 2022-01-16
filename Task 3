@@ -1,0 +1,43 @@
+Advantages and Disadvantages of Interpreter
+Advantages
+
+Executes line by line. Hence, debugging is easy.
+No intermediate code hence uses the memory efficiently.
+
+Disadvantages
+
+Execution time is more.
+
+Advantages And Disadvantages Of Compiler
+Advantages
+
+Runs Faster 
+Optimized 
+Secure 
+No dependencies 
+
+Disadvantages
+
+Extra Memory
+Harder to Debug 
+
+
+Python Advantages and Disadvantages
+
+Advantages of Python
+
+Easy to Read, Learn and Write
+Improved Productivity --synatx 
+Dynamically Typed
+Interpreted Language
+Free and Open-Source
+Vast Libraries Support
+
+
+ Disadvantages of Python
+ 
+ Slow Speed
+ Not Memory Efficient
+ Weak in Mobile Computing
+ Database Access
+ Runtime Errors
