@@ -57,18 +57,23 @@
 
 
 import random
-
 Game =int(input("Enter How many games you need play"))
 computerwins = 0
 playerwins = 0
 ties = 0
-for i in range(1,Game):
+Li1 = ["rock","paper","scissor"]
+for i in range(0,Game):
+    print("Game ",i)
     user_input =input("Enter you values(rock,paper,scissor)")
-    print("Game",i)
-    Li1 = ["rock","paper","scissor"]
-    computer_action=random.choice(Li1)
-    print("user {} Computer {}" .format(user_input,computer_action))
-
+    if user_input in Li1:
+        computer_action=random.choice(Li1)
+        print("user {} Computer {}" .format(user_input,computer_action))
+    else:
+        print("invalid choices")
+        again =input("you wnat some more ?(y/n)")
+        if again.lower()=="n":
+            break
+        print()
     if user_input == computer_action:
         print("User {} computer {}  its tie ".format(user_input,computer_action))
         ties += 1
@@ -89,7 +94,7 @@ for i in range(1,Game):
     elif user_input=="scissor":
         if computer_action=="paper":
             print("scissor wins")
-            playerwins +=1        
+            playerwins +=1          
         else:
             print("Rock wins")
             computerwins+1
@@ -97,7 +102,10 @@ print("Total number of games",i)
 print("System points ==",computerwins)
 print("user points==",playerwins)
 print("Tie points==",ties)
-if playerwins >computerwins:
+if playerwins >=computerwins:
     print("USER wins the game !!! Congrats !!!!")
+elif ties>=playerwins:
+    print("Match tied")
 else:
     print("System wins the game !!! Congrats !!!!")
+    
